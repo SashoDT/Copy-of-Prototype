@@ -1,1 +1,24 @@
-<p>result-page works!</p>
+<div id="Results">Graph Interface</div>
+<div id="wholeGraphContainer"></div>
+<div id="year-slider">
+  <mat-slider
+    [min]="1950"
+    [max]="2023"
+    [step]="1"
+    [(ngModel)]="sliderValue"
+    thumbLabel
+    [displayWith]="formatLabel"
+    dualThumb
+    (change)="onSliderChange($event)">
+    <input matSliderStartThumb [(ngModel)]="sliderValue[0]" name="startThumb">
+    <input matSliderEndThumb [(ngModel)]="sliderValue[1]" name="endThumb">
+  </mat-slider>
+  <div>
+    <p>Selected range: {{ sliderValue[0] }} - {{ sliderValue[1] }}</p>
+  </div>
+</div>
+
+
+
+
+

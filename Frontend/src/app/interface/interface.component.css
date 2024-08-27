@@ -22,16 +22,30 @@ body {
   margin-bottom: 10px;
 }
 
-#graphContainer {
+#motifGraphContainer {
   border: 1px solid black;
-  width: 80%;
+  width: 90%;
   height: 70%;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 150px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-right: 125px;
+}
+
+#wholeGraphContainer {
+  border: 1px solid black;
+  width: 90%;
+  height: 70%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 125px;
   margin-bottom: 10px;
 }
 
@@ -82,5 +96,13 @@ body {
   outline: none;
   border-color: #3498db;
   box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+}
+
+.whole-link:hover {
+  fill: red;
+}
+
+.whole-link {
+  stroke: #000000;
 }
 

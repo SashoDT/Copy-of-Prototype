@@ -1,6 +1,5 @@
 package com.example.graphbackend;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 public class GraphLink implements Serializable {

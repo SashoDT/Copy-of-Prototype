@@ -1,8 +1,8 @@
-import {GraphNode, GraphLink} from "../interface/interface.component";
+import {MotifGraphNode, MotifGraphLink} from "./graph-dtos";
 
 export class GraphDTO {
-  nodes?: GraphNode[];
-  links?: GraphLink[];
+  nodes?: MotifGraphNode[];
+  links?: MotifGraphLink[];
   lowerYear?: number;
   upperYear?: number;
 }

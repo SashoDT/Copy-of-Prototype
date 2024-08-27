@@ -1,4 +1,4 @@
-import {GraphNode, GraphLink} from "../dtos/graph-models"
+import {MotifGraphNode, MotifGraphLink, GraphNode, GraphLink} from "../dtos/graph-dtos"
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {GraphDTO} from "../dtos/graphDTO";
@@ -12,8 +12,8 @@ export class InterfaceService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getResults(nodes: GraphNode[], links: GraphLink[], lowerYear: number, upperYear: number): Observable<GraphDTO> {
-    const data: GraphDTO = {
+  getResults(nodes: MotifGraphNode[], links: MotifGraphLink[], lowerYear: number, upperYear: number): Observable<any> {
+    const data: any = {
       nodes: nodes,
       links: links,
       lowerYear: lowerYear,
